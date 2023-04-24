@@ -6,25 +6,145 @@
     xmlns:local="clr-namespace:Calculator"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Title="MainWindow"
-    Width="500"
+    Width="600"
     Height="800"
     ResizeMode="NoResize"
     mc:Ignorable="d">
-    <Border>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition />
-                <ColumnDefinition />
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-            </Grid.RowDefinitions>
-        </Grid>
 
-    </Border>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock
+            Name="Operations"
+            Grid.RowSpan="2"
+            Grid.ColumnSpan="3"
+            Background="#d6d6d6" />
+
+        <Button
+            Name="One"
+            Grid.Row="2"
+            Grid.RowSpan="2"
+            Grid.Column="0">
+            1
+        </Button>
+
+        <Button
+            Name="Two"
+            Grid.Row="2"
+            Grid.RowSpan="2"
+            Grid.Column="1">
+            2
+        </Button>
+
+        <Button
+            Name="Three"
+            Grid.Row="2"
+            Grid.RowSpan="2"
+            Grid.Column="2">
+            3
+        </Button>
+
+        <Button
+            Name="Four"
+            Grid.Row="4"
+            Grid.Column="0">
+            4
+        </Button>
+
+        <Button
+            Name="Five"
+            Grid.Row="4"
+            Grid.Column="1">
+            5
+        </Button>
+        <Button
+            Name="Six"
+            Grid.Row="4"
+            Grid.Column="2">
+            6
+        </Button>
+
+        <Button
+            Name="Seven"
+            Grid.Row="5"
+            Grid.Column="0">
+            7
+        </Button>
+
+        <Button
+            Name="Eight"
+            Grid.Row="5"
+            Grid.Column="1">
+            8
+        </Button>
+
+        <Button
+            Name="Nine"
+            Grid.Row="5"
+            Grid.Column="2">
+            9
+        </Button>
+
+        <Button
+            Name="Comma"
+            Grid.Row="0"
+            Grid.Column="4">
+            ,
+        </Button>
+
+        <Button
+            Name="Division"
+            Grid.Row="1"
+            Grid.Column="4"
+            Click="Division_Click">
+            /
+        </Button>
+
+        <Button
+            Name="Multiplication"
+            Grid.Row="2"
+            Grid.Column="4">
+            *
+        </Button>
+
+        <Button
+            Name="Plus"
+            Grid.Row="4"
+            Grid.Column="4"
+            Click="Plus_Click">
+            +
+        </Button>
+
+        <Button
+            Name="Minus"
+            Grid.Row="3"
+            Grid.Column="4"
+            Click="Minus_Click">
+            -
+        </Button>
+
+        <Button
+            Name="Equal"
+            Grid.Row="5"
+            Grid.Column="4"
+            Click="Equal_Click">
+            =
+        </Button>
+    </Grid>
+
+
 
 </Window>

@@ -24,5 +24,25 @@ namespace Calculator
         {
             InitializeComponent();
         }
+
+        private void Plus_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Minus_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Equal_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Division_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

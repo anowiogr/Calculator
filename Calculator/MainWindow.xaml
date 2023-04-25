@@ -23,128 +23,197 @@
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
             <RowDefinition Height="1*" />
-            <RowDefinition Height="2*" />
-            <RowDefinition Height="2*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
 
         <TextBlock
             Name="Operations"
-            Grid.RowSpan="2"
-            Grid.ColumnSpan="3"
+            Grid.Row="0"
+            Grid.ColumnSpan="4"
             Background="#d6d6d6" />
 
         <Button
-            Name="One"
-            Grid.Row="2"
-            Grid.RowSpan="2"
-            Grid.Column="0">
-            1
+            Name="Del"
+            Grid.Row="1"
+            Grid.Column="0"
+            Background="Gray"
+            BorderThickness="0"
+            Click="Del_Click">
+            C
+        </Button>
+        <Button
+            Name="CE"
+            Grid.Row="1"
+            Grid.Column="1"
+            Background="Gray"
+            BorderThickness="0"
+            Click="CE_Click">
+            CE
+        </Button>
+        <Button
+            Name="Math_root"
+            Grid.Row="1"
+            Grid.Column="2"
+            Background="Gray"
+            BorderThickness="0"
+            Click="Math_root_Click">
+            √
+        </Button>
+        <Button
+            Name="Square"
+            Grid.Row="1"
+            Grid.Column="4"
+            Background="Gray"
+            BorderThickness="0"
+            Click="Square_Click">
+            x2
         </Button>
 
-        <Button
-            Name="Two"
-            Grid.Row="2"
-            Grid.RowSpan="2"
-            Grid.Column="1">
-            2
-        </Button>
+
 
         <Button
-            Name="Three"
+            Name="Seven"
             Grid.Row="2"
-            Grid.RowSpan="2"
-            Grid.Column="2">
-            3
+            Grid.Column="0"
+            BorderThickness="0"
+            Click="Seven_Click">
+            7
         </Button>
+        <Button
+            Name="Eight"
+            Grid.Row="2"
+            Grid.Column="1"
+            BorderThickness="0"
+            Click="Eight_Click">
+            8
+        </Button>
+        <Button
+            Name="Nine"
+            Grid.Row="2"
+            Grid.Column="2"
+            BorderThickness="0"
+            Click="Nine_Click">
+            9
+        </Button>
+        <Button
+            Name="Division"
+            Grid.Row="2"
+            Grid.Column="4"
+            Background="Gray"
+            BorderThickness="0"
+            Click="Division_Click">
+            /
+        </Button>
+
 
         <Button
             Name="Four"
-            Grid.Row="4"
-            Grid.Column="0">
+            Grid.Row="3"
+            Grid.Column="0"
+            BorderThickness="0"
+            Click="Four_Click">
             4
         </Button>
 
         <Button
             Name="Five"
-            Grid.Row="4"
-            Grid.Column="1">
+            Grid.Row="3"
+            Grid.Column="1"
+            BorderThickness="0"
+            Click="Five_Click">
             5
         </Button>
         <Button
             Name="Six"
-            Grid.Row="4"
-            Grid.Column="2">
+            Grid.Row="3"
+            Grid.Column="2"
+            BorderThickness="0"
+            Click="Six_Click">
             6
         </Button>
-
-        <Button
-            Name="Seven"
-            Grid.Row="5"
-            Grid.Column="0">
-            7
-        </Button>
-
-        <Button
-            Name="Eight"
-            Grid.Row="5"
-            Grid.Column="1">
-            8
-        </Button>
-
-        <Button
-            Name="Nine"
-            Grid.Row="5"
-            Grid.Column="2">
-            9
-        </Button>
-
-        <Button
-            Name="Comma"
-            Grid.Row="0"
-            Grid.Column="4">
-            ,
-        </Button>
-
-        <Button
-            Name="Division"
-            Grid.Row="1"
-            Grid.Column="4"
-            Click="Division_Click">
-            /
-        </Button>
-
         <Button
             Name="Multiplication"
-            Grid.Row="2"
-            Grid.Column="4">
+            Grid.Row="3"
+            Grid.Column="4"
+            Background="Gray"
+            BorderThickness="0"
+            Click="Multiplication_Click">
             *
         </Button>
 
         <Button
-            Name="Plus"
+            Name="One"
             Grid.Row="4"
-            Grid.Column="4"
-            Click="Plus_Click">
-            +
+            Grid.Column="0"
+            BorderThickness="0"
+            Click="One_Click">
+            1
         </Button>
-
+        <Button
+            Name="Two"
+            Grid.Row="4"
+            Grid.Column="1"
+            BorderThickness="0"
+            Click="Two_Click">
+            2
+        </Button>
+        <Button
+            Name="Three"
+            Grid.Row="4"
+            Grid.Column="2"
+            BorderThickness="0"
+            Click="Three_Click">
+            3
+        </Button>
         <Button
             Name="Minus"
-            Grid.Row="3"
+            Grid.Row="4"
             Grid.Column="4"
+            Background="Gray"
+            BorderThickness="0"
             Click="Minus_Click">
             -
         </Button>
 
+
+
+        <Button
+            Name="Zero"
+            Grid.Row="5"
+            Grid.Column="0"
+            BorderThickness="0"
+            Click="Zero_Click">
+            0
+        </Button>
+        <Button
+            Name="Comma"
+            Grid.Row="5"
+            Grid.Column="1"
+            BorderThickness="0"
+            Click="Comma_Click">
+            ,
+        </Button>
         <Button
             Name="Equal"
             Grid.Row="5"
-            Grid.Column="4"
+            Grid.Column="2"
+            Background="DarkRed"
+            BorderThickness="0"
             Click="Equal_Click">
             =
         </Button>
-    </Grid>
+        <Button
+            Name="Plus"
+            Grid.Row="5"
+            Grid.Column="3"
+            Background="Gray"
+            BorderThickness="0"
+            Click="Plus_Click">
+            +
+        </Button>
 
+    </Grid>
 
 
 </Window>
